@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>LevelUp</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta name="author" content="Lorem ipsum" />
+
+    <link rel="icon" href="./favicon/favicon.ico" />
+    <link rel="icon" href="./favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="./styles/css/reset.css" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!--1 Блок. Промо-->
+      <article class="packagePromo">
+        <div class="packagePromo__videoWrapper">
+          <video
+            class="packagePromo__footage"
+            autoplay
+            loop
+            muted
+            poster="./resources/video/footagePromo.png"
+          >
+            <source src="./resources/video/footagePromo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <img class="packagePromo__wave" src="./resources/svg/wave.svg" />
+        <!--Название продукта-->
+        <header class="packagePromo__header">
+          <img
+            class="packagePromo__logo"
+            src="./resources/svg/logo.svg"
+            alt="LevelUp"
+          />
+        </header>
+        <section class="packagePromo__content">
+          <!--Фон блока: произвольный видеоролик-->
+          <!--Фото продукта-->
+          <img
+            class="packagePromo__image"
+            src="./resources/img/prod1.png"
+            alt="Product photo"
+          />
+          <!--3 его характеристики в виде списка-->
+          <div class="packagePromo__info card">
+            <ul class="packagePromo__list">
+              <li>
+                <img class="listMarker" src="./resources/svg/med1.svg" />
+                <div>
+                  Lorem ipsum dolor
+                  <span class="accent">sit amet</span>
+                  sit amet, consectetur adipiscing elit!
+                </div>
+              </li>
+              <li>
+                <img class="listMarker" src="./resources/svg/med2.svg" />
+                <div>
+                  <span class="accent">Sed do eiusmod tempor</span> incididunt
+                  ut labore et dolore magna aliqua!
+                </div>
+              </li>
+              <li>
+                <img class="listMarker" src="./resources/svg/med3.svg" />
+                <div>Ut enim ad minim <span class="accent">veniam</span>!</div>
+              </li>
+            </ul>
+            <!--Кнопка заказать (должна скроллить к форме заказа)-->
+            <a href="#mainOrderButton"
+              ><button class="orderButton">Заказать</button></a
+            >
+          </div>
+        </section>
+      </article>
+
+      <!--2 Блок. Состав продукта-->
+      <article class="composition">
+        <div class="composition__main">
+          <img
+            class="composition__productImage"
+            src="./resources/img/prod3.png"
+            alt="Product photo"
+          />
+          <a href="#mainOrderButton"
+            ><button class="orderButton">Заказать</button></a
+          >
+        </div>
+
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component1.png"
+            alt="component1"
+          />
+          <span class="composition__componentTitle">Lorem ipsum </span>
+        </div>
+
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component2.png"
+            alt="component2"
+          />
+          <span class="composition__componentTitle"
+            >Lorem ipsum dolor sit amet</span
+          >
+        </div>
+
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component3.png"
+            alt="component3"
+          />
+          <span class="composition__componentTitle">Lorem ipsum</span>
+        </div>
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component4.png"
+            alt="component4"
+          />
+          <span class="composition__componentTitle">Lorem ipsum dolor </span>
+        </div>
+
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component5.png"
+            alt="component5"
+          />
+          <span class="composition__componentTitle"
+            >Lorem ipsum dolor sit amet</span
+          >
+        </div>
+
+        <div class="composition__component card">
+          <img
+            class="composition__componentImage"
+            src="./resources/img/components/component6.png"
+            alt="component6"
+          />
+          <span class="composition__componentTitle">Lorem ipsum</span>
+        </div>
+      </article>
+
+      <!--3 Блок. Отзывы-->
+      <article class="reviews">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <div class="reviews__cards">
+          <label class="reviews__reviewCard card" for="item-1" id="card-1">
+            <img
+              class="reviews__clientPhoto"
+              src="./resources/img/clients/client1.png"
+              alt="Our client"
+            />
+            <p class="reviews__autor">Lorem I.</p>
+            <p class="reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </label>
+
+          <label class="reviews__reviewCard card" for="item-2" id="card-2">
+            <img
+              class="reviews__clientPhoto"
+              src="./resources/img/clients/client2.png"
+              alt="Our client"
+            />
+            <p class="reviews__autor">Lorem I.</p>
+            <p class="reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </label>
+
+          <label class="reviews__reviewCard card" for="item-3" id="card-3">
+            <img
+              class="reviews__clientPhoto"
+              src="./resources/img/clients/client3.png"
+              alt="Our client"
+            />
+            <p class="reviews__autor">Lorem I.</p>
+            <p class="reviews__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </label>
+        </div>
+      </article>
+
+      <!--4 Блок. Промо-->
+      <article class="personPromo">
+        <!--Фон: произвольный градиент или паттерн-->
+        <!--Фото человека с продуктом-->
+        <section class="personPromo__container">
+          <div class="personPromo__content card">
+            <p class="personPromo__description">
+              <!--Небольшое описание продукта-->
+              &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. <br />
+              &emsp; Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium doloremque laudantium, totam rem aperiam,
+              eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+              voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+              magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </p>
+            <a href="#mainOrderButton"
+              ><button class="orderButton">Заказать</button></a
+            >
+          </div>
+        </section>
+
+        <ul class="personPromo__list card">
+          <li>
+            <img class="listMarker" src="./resources/svg/med1.svg" />
+            Lorem ipsum dolor
+          </li>
+          <li>
+            <img class="listMarker" src="./resources/svg/med2.svg" />
+            Sit amet, consectetur
+          </li>
+          <li>
+            <img class="listMarker" src="./resources/svg/med3.svg" />
+            Adipiscing elit, sed do
+          </li>
+        </ul>
+      </article>
+
+      <!--5 Блок. Форма заказа-->
+      <article class="orderForm">
+        <div class="orderForm__header">
+          <img class="orderForm__wave" src="./resources/svg/wave.svg" />
+          <!--Название продукта-->
+          <img
+            class="orderForm__logo"
+            src="./resources/svg/logo.svg"
+            alt="LevelUp"
+          />
+        </div>
+        <!--Таймер обратного отсчета(30 мин)-->
+        <div class="orderForm__timer">30 : 00 : 00</div>
+
+        <div class="orderForm__content">
+          <section class="orderForm__info card">
+            <!--Фото продукта-->
+            <!--Старая и новая цена. Старая цена должна быть меньше и зачеркнута. Новой цене добавить произвольную css анимацию.-->
+            <!--Форма заказа с именем, телефоном и кнопкой. При селекте инпутов в форме в правом верхнем углу инпутов должны отображаться
+          подсказки с примером имени и телефона.В инпуте телефона разрешить ввод только цифр (без маски).-->
+            <div class="orderForm__oldPrice">$ 300</div>
+            <div class="orderForm__newPrice">$ 30</div>
+            <form class="orderForm__form">
+              <label class="orderForm__label" for="orderForm__nameField">
+                Enter your name:
+              </label>
+              <div class="orderForm__input">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="orderForm__nameField"
+                />
+                <p class="orderForm__inputHelp">Петя</p>
+              </div>
+              <label class="orderForm__label" for="orderForm__phoneField"
+                >Enter your phone number:
+              </label>
+              <div class="orderForm__input">
+                <input
+                  type="number"
+                  placeholder="Phone number"
+                  id="orderForm__phoneField"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                />
+                <p class="orderForm__inputHelp">8800-555-35-35</p>
+              </div>
+            </form>
+            <button id="mainOrderButton" class="orderButton">Заказать</button>
+          </section>
+          <div class="orderForm__image" />
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
